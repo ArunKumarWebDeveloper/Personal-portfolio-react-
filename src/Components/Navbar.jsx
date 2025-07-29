@@ -1,6 +1,5 @@
 import React from "react";
 import useDarkMode from "../hooks/Darkmode"; 
-import logo from '../assets/logo.png';// Use "use" prefix for hooks
 
 function Navbar() {
   const [DarkMode, setDarkMode] = useDarkMode(); // ✅ Use the hook correctly
@@ -10,7 +9,7 @@ function Navbar() {
     <nav className="custom-navbar" aria-label="Main Navigation">
       <div className="logo-container">
         <a href="#">
-          <img src={logo} alt="Arun Kumar R Logo" className="logo" />
+          <img src= "https://via.placeholder.com/40" alt="Arun Kumar R Logo" className="logo" />
         </a>
       </div>
       <ul className="nav-links" id="navLinks">
