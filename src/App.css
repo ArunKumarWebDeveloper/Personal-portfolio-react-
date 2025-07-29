@@ -497,6 +497,7 @@ body.dark-mode .btn:hover {
 }
 
 .tool-card p {
+ text-decoration: underline;
   font-weight: 500;
   margin: 0;
 }

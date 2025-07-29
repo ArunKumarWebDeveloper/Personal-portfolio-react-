@@ -14,7 +14,6 @@ function About() {
           JavaScript, and frameworks like React. I love solving problems and building
           real-world projects that make a difference.
         </p>
-      <p>Tools worked with : </p> 
      <div className="tool1">
   <div className="tool-card">
     <img src="/vs.png" alt="VS Code" />
