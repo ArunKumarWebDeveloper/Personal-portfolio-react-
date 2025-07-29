@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="custom-navbar" aria-label="Main Navigation">
       <div className="logo-container">
         <a href="#">
-          <img src="src/assets/logo.png" alt="Arun Kumar R Logo" className="logo" />
+          <img src="./src/assets/logo.png" alt="Arun Kumar R Logo" className="logo" />
         </a>
       </div>
       <ul className="nav-links" id="navLinks">
@@ -21,7 +21,7 @@ function Navbar() {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button onClick={() => setDarkMode(prev => !prev)} id="darkMode">
-        <img src="src/assets/dark-mode.png" alt="Toggle Dark Mode" />
+        <img src="./src/assets/dark-mode.png" alt="Toggle Dark Mode" />
       </button>
     </nav>
   );

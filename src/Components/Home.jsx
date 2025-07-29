@@ -1,7 +1,7 @@
 function Home() {
   return (
     <section id="home">
-      <img src="src/assets/coding-man.jpg" className="home-image"></img>
+      <img src="./src/assets/coding-man.jpg" className="home-image"></img>
       <div className="home-overlay">
         
         <h1>ARUN KUMAR R</h1>
