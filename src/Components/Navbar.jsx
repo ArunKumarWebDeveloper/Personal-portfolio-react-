@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="custom-navbar" aria-label="Main Navigation">
       <div className="logo-container">
         <a href="#">
-          <img src= "./public/assets/logo.png" alt="Arun Kumar R Logo" className="logo" />
+          <img src= "src/assets/logo.png" alt="Arun Kumar R Logo" className="logo" />
         </a>
       </div>
       <ul className="nav-links" id="navLinks">
