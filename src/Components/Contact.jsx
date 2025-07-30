@@ -20,13 +20,15 @@ function Contact() {
       <img className="contact-img" src="/linkedin.png" alt="Linkedin"></img>
       <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank">
         linkedin.com/in/arun-kumar-r
-      </a></div>
+      </a>
+      </div>
   
 
     <div className="Contact"><img className="contact-img" src="/github.png" alt="GitHub"></img>
       <a href="https://github.com/ArunKumarWebDeveloper" target="_blank">
         github.com/ArunKumarWebDeveloper
-      </a></div>
+      </a>
+      </div>
 
   </div>
 </section>

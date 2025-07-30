@@ -15,7 +15,7 @@ function Certificates() {
       </div>
       <div className="certificate-card">
         <h3>CSS (Programming Hub)</h3>
-        <img src="/css.png" alt="Programming Hub" loading="lazy" />
+        <img src="/CSS.png" alt="Programming Hub" loading="lazy" />
         <a href="https://storage.googleapis.com/programminghub/certificate%2F1751258805150.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
       <div className="certificate-card">
