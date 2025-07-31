@@ -8,7 +8,6 @@ import Certificates from './Components/Certificates';
 import Contact from './Components/Contact';
 import { useEffect } from 'react';
 import React from 'react';
-
 import './App.css';
 
 function App() {

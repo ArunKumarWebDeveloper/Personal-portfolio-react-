@@ -348,7 +348,7 @@ body.dark-mode .btn:hover {
 #home {
 
   margin: 20px;
-  padding: 30px 20px;
+  padding: 0px 0px;
   border-radius: 20px;
   height: 90vh;
   display: flex;
@@ -492,6 +492,8 @@ body.dark-mode .btn:hover {
 .tool-card img {
   width: 60px;
   height: 60px;
+  background-color:  white;
+  border-radius: 20%;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -589,8 +591,8 @@ padding: 8px 16px;
 /* Skills Grid */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
   max-width: 1100px;
   margin: auto;
 }
@@ -599,7 +601,7 @@ padding: 8px 16px;
 .skill {
   background-color: auto #ffffff;
   border-radius: 12px;
-  padding: 30px;
+  padding: 30px ;
   padding-bottom:0px ;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
