@@ -1,10 +1,10 @@
 function Home() {
   return (
     <section id="home">
-      <img src="/coding-man.jpg" className="home-image"></img>
+      <img src="/coding3.jpg" className="home-image"></img>
       <div className="home-overlay">
         
-        <h1>ARUN KUMAR R</h1>
+        <h1>ARUN KUMAR.R</h1>
         <p>Web Developer | Programmer | Tech Enthusiast</p>
       </div>
     </section>
