@@ -6,7 +6,7 @@ function Home() {
         
         <h1>ARUN KUMAR.R</h1>
         <p>I'm a passionate Web Developer | Programmer </p>
-        <a href="#contact" class="cta-btn">Hire Me</a>
+        <a href="#resume" class="cta-btn">Hire Me</a>
       </div>
     </section>
   );
