@@ -1,7 +1,9 @@
 function About() {
   return (
     <section id="about" className="section2">
+ 
       <h2>About Me</h2>
+    
       <div className="about-container">
         <img src="/2517915.jpg"
           alt="Arun Kumar R"
