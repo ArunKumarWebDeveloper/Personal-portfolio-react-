@@ -1,12 +1,31 @@
+import React from 'react';
+import BlurText from "./BlurText";
+
 function Home() {
+ const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
   return (
-    <section id="home">
-      <img src="/coding2.jpg" className="home-image"></img>
+    <section id="home" >
+      <img src="/img2 (4).jpg" className="home-image" alt="Coding workspace"></img>
       <div className="home-overlay">
         
-        <h1>ARUN KUMAR.R</h1>
-        <p>I'm a passionate Web Developer | Programmer </p>
-        <a href="#resume" class="cta-btn">Hire Me</a>
+<BlurText className="text-type"
+  text="ARUN KUMAR.R"
+  delay={150}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+/>
+
+<BlurText className="text-p"
+  text="Web Developer | Programmer"
+  delay={150}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+/>
       </div>
     </section>
   );

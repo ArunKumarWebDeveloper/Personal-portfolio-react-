@@ -1,6 +1,6 @@
-import React from "react";
 import useDarkMode from "../hooks/Darkmode"; 
 import useMobileMenu from './../hooks/useMobileMenu'; 
+
 
 
 function Navbar() {
@@ -8,7 +8,6 @@ function Navbar() {
   const [DarkMode, setDarkMode] = useDarkMode(); // ✅ Use the hook correctly
 
   return (
-   
     <nav className="custom-navbar" aria-label="Main Navigation" >
       <div className="logo-container">
         <a href="#">
@@ -42,7 +41,7 @@ function Navbar() {
       </div>
       </div>
     </nav>
- 
+
   );
 }
 

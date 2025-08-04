@@ -10,13 +10,16 @@ import { useEffect } from 'react';
 import React from 'react';
 import './App.css';
 
+
 function App() {
   useEffect(() => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }, []);
 
   return (
+    
     <div className="main">
+      
       <Navbar />
       <Home />
       <About />
@@ -25,7 +28,7 @@ function App() {
       <Resume />
       <Certificates />
       <Contact />
-      
+    
     </div>
   );
 }

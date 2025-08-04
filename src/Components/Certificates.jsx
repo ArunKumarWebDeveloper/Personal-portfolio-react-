@@ -4,7 +4,7 @@ function Certificates() {
   <h2>Certificates</h2>
   <div class="certificates-container">
     <div class="certificate-card">
-      <h3>Full-Stack Web Development (Udemy)</h3>
+      <h3>Full-Stack Web Development</h3>
       <img src="/Screenshot 2025-07-23 170248.png" alt="Udemy" loading="lazy" />
       <a class="view-button" href="https://www.udemy.com/certificate/UC-bdfb3cc2-4926-4098-879e-3a139dbcd9a5/" target="_blank">View Certificate</a>
     </div>
