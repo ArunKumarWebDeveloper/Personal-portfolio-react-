@@ -306,14 +306,14 @@ nav ul li a {
 
 /* General container for the home section */
 #home {
-  margin-top: 25px ;
-  margin-bottom: auto;
-  height: 88vh;
+  margin-top: 25px;
+  margin-bottom: 0;
+  min-height: 100vh; /* Ensures it fills the screen */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: auto;
+  overflow: hidden; /* Prevent scrollbars */
   color: white;
 }
 
@@ -322,205 +322,166 @@ nav ul li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* Changed from flex to block */
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Puts image behind text */
 }
 
 /* Overlay Text Container */
 .home-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   text-align: center;
   color: white;
-  /* Removed padding here to prevent double-padding on mobile */
-  border-radius: 12px;
-  width: auto;
-  /* Added a max-width to ensure it doesn't get too wide on large screens */
-  max-width: 90%; 
+  padding: 0 20px;
+  max-width: 90%;
 }
 
 /* "ARUN KUMAR.R" text styling */
 .text-type {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
-  color: white; /* Changed color to be consistent */
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  letter-spacing: -0.5px;
   font-family: 'Poppins', sans-serif;
-  white-space: pre-wrap; /* This can be useful for line breaks but might conflict with nowrap on mobile */
+  margin-bottom: 1rem;
+  color: white;
 }
 
-/* The `.text-type` selector is duplicated. I've consolidated them for clarity */
-.text-type__cursor {
-  margin-left: 0.25rem;
-  display: inline-block;
-  opacity: 1;
-}
-
-.text-type__cursor--hidden {
-  display: none;
-}
-
-/* "Web Developer | Programmer" text styling */
+/* Subtitle */
 .text-p {
-  font-size: 1.5rem; /* Increased font size for better visibility */
-  font-weight: bold;
-  /* Removed fixed width and height. Let the content determine the size. */
-  margin: 0; /* Adjusted margin to be closer to the name */
-  border-radius: 15px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  /* This container holds all your text */
-  .home-overlay {
-    text-align: center; /* Align text to the left */
-    padding: auto 20px; /* Adjusted padding for better spacing */
-    width: 700px; /* Let's explicitly set the width here for small screens */
-    transform: translate(-50%, -50%);
-  }
-
-  /* This is for "ARUN KUMAR.R" */
   .text-type {
-    font-size: 40px;
-    margin-bottom: 5px; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    color: white; /* Make sure the color is set */
-    font-weight: bold; /* Make sure the font weight is set */
-    /* text-align: start; This is not needed here as the parent sets it */
+    font-size: 2rem;
+    white-space: normal;
   }
 
-  /* This is for "Web Developer | Programmer" */
   .text-p {
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* text-align: start; This is the correct alignment */
-    text-align: start;
-    width: auto; /* Let the container size itself */
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .home-overlay {
+    padding: 0 10px;
+    max-width: 95%;
   }
 }
+
 /* About Section Background */
 
 
 /* Centering the "About Me" heading is already handled by `text-align: center` on the #about section */
+/* Section wrapper */
 #about {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
+/* Section title */
 #about h2 {
   padding-top: 40px;
-    font-size: 2.5rem;
-    color: auto #000;
-    margin-bottom: 10px;
-    text-align: center;
+  font-size: 2.5rem;
+  color:auto #000;
+  margin-bottom: 12px;
 }
 
-/* Main container: two columns */
+/* Main container: two columns on desktop, stacked on mobile */
 .about-container {
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-    gap: 10px;
-    flex-wrap: wrap;
-
+ background-color: auto rgba(255, 255, 255, 0.842);
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow:  0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Left side: Image with space above and below */
-.about-image {
-  margin-top: 0px;
-    flex: 1;
-    max-width: 380px;
-    height: 60vh;
+/* Image wrapper */
+.about-container img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px; /* Added padding to create space above and below the image */
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
+/* The profile image itself */
 .profile-image {
-    width: 100%;
-    height: 100%;
-    max-width: 350px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 4px 105px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 350px;      /* caps the width */
+  height: auto;          /* auto height keeps aspect ratio */
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
-
 .profile-image:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
+/* Text block */
 .about-container p {
-  max-width: auto;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 0px;
-    margin-left: 50px;
+  margin-top:40px;
+  font-size: 1.1rem;
+  color: auto #333;
+  line-height: 1.8;
 }
 
 /* Tool cards container */
 .tool1 {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 10px 47px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto 0;
 }
 
 /* Individual tool card */
 .tool-card {
-    background-color:auto #ffffff;
-    padding: 15px 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(30, 30, 30, 0.4);
-    transition: transform 0.3s ease;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+ padding: 15px 25px;
+  transition: transform 0.3s;
+  text-align: center;
+ 
 }
-
 .tool-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
-
 .tool-card img {
   background-color: white;
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
 
-.tool-card p {
 
-  color: auto black;
-    font-weight: 500;
-    margin: 0;
-}
-
-/* Responsive layout for smaller screens */
+/* MOBILE: stack everything vertically */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-    }
-
-
-    .tool1 {
-        justify-content: center;
-    }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-container p {
+    text-align: center;
+  }
+  .profile-image {
+    max-width: 80%;
+  }
 }
 
 
@@ -635,8 +596,6 @@ font-size:1.2rem;
   width: 24px;
   height: 24px;
 }
-
-
 
 
 /* View Button */
