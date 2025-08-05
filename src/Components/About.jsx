@@ -1,4 +1,4 @@
-import ScrollReveal from './ScrollReveal';
+
 
 function About() {
 
@@ -6,7 +6,6 @@ function About() {
     <section id="about" className="section2">
       <h2>About Me</h2>
       <div className="about-container">
-        {/* Left: Profile Image */}
         <div className="about-image">
           <img
             src="/profile.jpg"
@@ -15,20 +14,11 @@ function About() {
             loading="lazy"
           />
         </div>
-
-        {/* Right: Text and Tool Cards */}
-        <div className="about-content-right">
-         <ScrollReveal
-  baseOpacity={0}
-  enableBlur={true}
-  baseRotation={5}
-  blurStrength={10}
->
-  Hi, I'm Arun Kumar R, a passionate web developer with a keen interest in
+          <p> Hi, I'm Arun Kumar R, a passionate web developer with a keen interest in
             creating dynamic and responsive web applications. I am skilled in HTML, CSS,
             JavaScript, and frameworks like React. I love solving problems and building
             real-world projects that make a difference.
-</ScrollReveal>
+               </p>
           <p class="pa">Tools Worked with</p>
           <div className="tool1">
             
@@ -46,7 +36,6 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

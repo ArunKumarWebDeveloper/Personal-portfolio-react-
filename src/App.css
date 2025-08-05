@@ -16,7 +16,6 @@ nav,
   transition: all 0.4s ease-in-out;
 }
 
-
 html {
   scroll-behavior:smooth;
 }
@@ -114,9 +113,8 @@ nav ul {
 }
 
 nav ul li a {
-  font-weight: bold;
+  font-weight: 600;
   color:  #007FFF;
-  font-weight: 500;
  transition: color 0.3s, border-bottom 0.3s;
 }
 
@@ -414,7 +412,6 @@ nav ul li a {
 
 /* Centering the "About Me" heading is already handled by `text-align: center` on the #about section */
 #about {
-
     padding: 60px 20px;
     text-align: center;
 }
@@ -423,7 +420,7 @@ nav ul li a {
   padding-top: 40px;
     font-size: 2.5rem;
     color: auto #000;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -444,7 +441,7 @@ nav ul li a {
   margin-top: 0px;
     flex: 1;
     max-width: 380px;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,17 +462,8 @@ nav ul li a {
     transform: scale(1.05);
 }
 
-/* Right side: Text + tools */
-.about-content-right {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    max-width: 700px;
-}
-
-.about-content-right p {
+.about-container p {
+  max-width: auto;
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 0px;
@@ -492,13 +480,13 @@ nav ul li a {
 
 /* Individual tool card */
 .tool-card {
-    background-color: #ffffff;
+    background-color:auto #ffffff;
     padding: 15px 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(30, 30, 30, 0.4);
     transition: transform 0.3s ease;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .tool-card:hover {
@@ -515,23 +503,11 @@ nav ul li a {
 
 .tool-card p {
 
-  color:  black;
+  color: auto black;
     font-weight: 500;
     margin: 0;
 }
-.scroll-reveal {
-  margin: 20px 0;
-}
 
-.scroll-reveal-text {
-  font-size: clamp(1.6rem, 4vw, 3rem);
-  line-height: 1.5;
-  font-weight: 600;
-}
-
-.word {
-  display: inline-block;
-}
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .about-container {
@@ -541,11 +517,6 @@ nav ul li a {
         margin: auto;
     }
 
-    .about-content-right {
-      margin: 0px ;
-        text-align: center;
-        align-items: center;
-    }
 
     .tool1 {
         justify-content: center;
@@ -771,7 +742,7 @@ font-size:1.2rem;
   background: white;
    display: flex;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 25px;
+  gap: 40px;
   max-width: 1100px;
   margin: auto ;
   padding: 10px 20px;
@@ -780,9 +751,9 @@ font-size:1.2rem;
 }
 
 .resume-card{
-     flex: 1 1 400px;
+    flex: 1 1 400px;
     max-width: 500px;
-    padding: 40px; /* Increased padding for more space */
+    padding: 40px ; /* Increased padding for more space */
     border-radius: 20px;
     background-color:auto #ffffff; /* A slightly lighter dark for the cards */
     box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); /* A more visible shadow on dark bg */
@@ -791,7 +762,7 @@ font-size:1.2rem;
 }
 .resume-overview {
     flex: 1 1 400px;
-    max-width: 500px;
+    max-width: 700px;
     padding: 40px; /* Increased padding for more space */
     border-radius: 20px;
     /* Updated: Background and shadow for dark mode */
@@ -817,7 +788,7 @@ font-size:1.2rem;
 .resume-actions {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 

@@ -16,7 +16,6 @@ function Projects() {
       </div>
       </div>
 
-
       <div className="project-card">
         <h3>Portfolio Website </h3>
         <img src="/landing.jpg" alt="Project 2" class="project-image" loading="lazy" />
