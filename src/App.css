@@ -157,6 +157,10 @@ nav ul li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+.my-name {
+  display: none; /* hide by default */
+}
+
 #darkMode {
     background: none;
     border: none;
@@ -249,6 +253,16 @@ nav ul li a {
  transition: color 0.3s, border-bottom 0.3s;
 }
 
+.my-name {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0070FF; /* or whatever suits your navbar */
+    padding: 10px;
+    border-radius: 15px;
+
+  }
+
   .hamburger-menu.open span:nth-child(1) {
     transform: translateY(11px) rotate(45deg);
   }
@@ -321,7 +335,7 @@ nav ul li a {
 .home-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   position: absolute;
   top: 0;
   left: 0;

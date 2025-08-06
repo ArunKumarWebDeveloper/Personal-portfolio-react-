@@ -7,11 +7,11 @@ function Home() {
 
   return (
     <section id="home" >
-      <img src="/img2 (4).jpg" className="home-image" alt="Coding workspace"></img>
+      <img src="/img2 (4).jpg" className="home-image" alt="Coding workspace" loading="lazy" ></img>
       <div className="home-overlay">
         
 <BlurText className="text-type"
-  text="ARUN KUMAR.R"
+  text="ARUN KUMAR R"
   delay={150}
   animateBy="words"
   direction="top"
