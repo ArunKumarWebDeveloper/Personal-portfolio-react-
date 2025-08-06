@@ -14,7 +14,7 @@ function Navbar() {
           <img src= "/logo.png" alt="Arun Kumar R Logo" className="logo" />
         </a>
       </div>
-      <span class="my-name">Arun-Portfolio</span>
+      
    <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`} id="navLinks" ref={navLinksRef}>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
