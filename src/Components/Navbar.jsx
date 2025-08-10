@@ -8,6 +8,7 @@ function Navbar() {
   const [DarkMode, setDarkMode] = useDarkMode(); // ✅ Use the hook correctly
 
   return (
+    
     <nav className="custom-navbar" aria-label="Main Navigation" >
       <div className="logo-container">
         <a href="#">

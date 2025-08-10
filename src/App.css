@@ -31,7 +31,7 @@ body {
   font-family: 'Nimbus Sans L';
   src: url('./assets/fonts/nimbus-sans-l.regular.otf') format('opentype');
   font-weight: normal;
-  font-style: normal;
+  font-style:normal;
 }
 
 h1, h2, h3 {
@@ -118,8 +118,8 @@ nav ul {
 }
 
 nav ul li a {
-  font-weight: 600;
-  color:  #007FFF;
+  font-weight: 500;
+  color:  hsl(210, 100%, 50%);
  transition: color 0.3s, border-bottom 0.3s;
 }
 
@@ -254,7 +254,7 @@ nav ul li a:hover {
 
 nav ul li a {
   margin: 10px ;
-  font-weight: bold;
+  font-weight: 500;
   color: auto #080808;
  transition: color 0.3s, border-bottom 0.3s;
 }
@@ -352,7 +352,6 @@ nav ul li a {
 .text-type {
   font-size: 3rem;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
   margin-bottom: 1rem;
   color: white;
 }
@@ -388,6 +387,7 @@ nav ul li a {
 /* Centering the "About Me" heading is already handled by `text-align: center` on the #about section */
 /* Section wrapper */
 #about {
+  
   padding: 60px 20px;
   text-align: center;
 }
@@ -1185,10 +1185,6 @@ body.dark-mode .btn:hover {
   background-color: #0056b3;
 }  
 
-.aurora-container {
-  width: 100%;
-  height: 100%;
-}
  .hamburger-menu span {
     background-color: #0070FF;
   }
