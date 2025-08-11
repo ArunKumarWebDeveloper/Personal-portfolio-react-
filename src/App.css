@@ -404,7 +404,7 @@ nav ul li a {
 .about-container {
  background-color: auto rgba(255, 255, 255, 0.842);
   max-width: 1000px;
-  margin: auto;
+  margin: 40px auto;
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow:  0 8px 24px rgba(0, 0, 0, 0.2);
@@ -659,6 +659,16 @@ font-size:1.2rem;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   height: 140px;
+}
+
+
+.skills-subtitle {
+  font-size: 1.1rem;
+  color: #100e0e;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill:hover {
@@ -1000,7 +1010,7 @@ font-size:1.2rem;
 
 /* Link Styling */
 .Contact a {
-    color: #334e68; /* Darker, more readable text color */
+    color: #131313; /* Darker, more readable text color */
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
