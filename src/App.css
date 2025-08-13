@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body,
@@ -69,7 +68,6 @@ a:hover {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-
 }
 
 /* Navbar */
@@ -150,7 +148,6 @@ nav ul li a:hover {
     justify-content: space-around;
     width: 30px;
     height: 25px;
-
 }
 
 .hamburger-menu span {
