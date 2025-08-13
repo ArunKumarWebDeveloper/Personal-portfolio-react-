@@ -5,12 +5,12 @@ function Projects() {
     <p>Here are some of my recent projects that showcase my skills and creativity.</p>
     <div className="projects-container">
     <div className="project-card">
-      <h3>Portfolio Website </h3>
-      <img src="/landing.jpg" alt="Project 1" class="project-image" loading="lazy" />
-       <p>A personal portfolio website showcasing my skills and projects.</p>
+      <h3>Weather + Planner </h3>
+      <img src="/weather.png" alt="Project 1" class="project-image" loading="lazy" />
+       <p>A simple website to check weather and plan daily task using to-do list.</p>
      <div class="project-buttons">
-     <a href="https://your-live-site.com" target="_blank" class="site-link">View Site</a>
-     <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+     <a href="http://localhost:5174/#weather" target="_blank" class="site-link">View Site</a>
+     <a href="https://github.com/ArunKumarWebDeveloper/Weather-Planner" target="_blank" class="github-link">
       <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon" />
       </a>
       </div>
