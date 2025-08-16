@@ -662,7 +662,7 @@ font-size:1.2rem;
 
 .skills-subtitle {
   font-size: 1.1rem;
-  color: #100e0e;
+  color:auto #100e0e;
   margin-bottom: 40px;
   max-width: 600px;
   margin-left: auto;
