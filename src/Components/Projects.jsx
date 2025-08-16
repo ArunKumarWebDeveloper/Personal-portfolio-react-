@@ -9,7 +9,7 @@ function Projects() {
       <img src="/weather.png" alt="Project 1" class="project-image" loading="lazy" />
        <p>A simple website to check weather and plan daily task using to-do list.</p>
      <div class="project-buttons">
-     <a href="http://localhost:5174/#weather" target="_blank" class="site-link">View Site</a>
+     <a href="https://planweather.netlify.app/" target="_blank" class="site-link">View Site</a>
      <a href="https://github.com/ArunKumarWebDeveloper/Weather-Planner" target="_blank" class="github-link">
       <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon" />
       </a>
