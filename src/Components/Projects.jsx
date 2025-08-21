@@ -22,8 +22,8 @@ function Projects() {
         <p>A Food-Recipe website to search and prepare your next favorite food.</p>
       <div class="project-buttons">
      <a href="https://your-live-site.com" target="_blank" class="site-link">View Site</a>
-     <a href="" target="_blank" class="github-link">
-      <img src="https://github.com/ArunKumarWebDeveloper/FlavorFind" alt="GitHub" class="github-icon" />
+     <a href="https://github.com/ArunKumarWebDeveloper/FlavorFind" target="_blank" class="github-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon" />
       </a>
       </div>
       </div>
