@@ -17,13 +17,13 @@ function Projects() {
       </div>
 
       <div className="project-card">
-        <h3>Portfolio Website </h3>
+        <h3>FLAVORFIND</h3>
         <img src="/project2.png" alt="Project 2" class="project-image" loading="lazy" />
-        <p>A personal portfolio website showcasing my skills and projects.</p>
+        <p>A Food-Recipe website to search and prepare your next favorite food.</p>
       <div class="project-buttons">
      <a href="https://your-live-site.com" target="_blank" class="site-link">View Site</a>
      <a href="" target="_blank" class="github-link">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon" />
+      <img src="https://github.com/ArunKumarWebDeveloper/FlavorFind" alt="GitHub" class="github-icon" />
       </a>
       </div>
       </div>
