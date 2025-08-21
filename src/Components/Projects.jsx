@@ -2,7 +2,7 @@ function Projects() {
   return (
    <section id="projects" className="section3">
     <h2>Projects</h2>
-    <p>Here are some of my recent projects that showcase my skills and creativity.</p>
+    <p>Here are some of my projects that showcase my skills and creativity.</p>
     <div className="projects-container">
     <div className="project-card">
       <h3>Weather + Planner </h3>
