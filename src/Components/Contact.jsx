@@ -14,11 +14,6 @@ function Contact() {
         </div>
         
         <div className="Contact">
-            <img className="contact-img" src="/phone.png" alt="Phone" />
-            <a href="tel:+919019944841">+91 9019944841</a>
-        </div>
-        
-        <div className="Contact">
             <img className="contact-img" src="/linkedin.png" alt="Linkedin" />
             <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank">
                 linkedin.com/in/arun-kumar-r

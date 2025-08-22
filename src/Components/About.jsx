@@ -20,7 +20,7 @@ function About() {
             real-world projects that make a difference.
                </p>
           <div className="tool1">
-            
+            <p>Tools I Use for Web Development </p>
             <div className="tool-card">
               <img src="/vs.png" alt="VS Code" />
               
