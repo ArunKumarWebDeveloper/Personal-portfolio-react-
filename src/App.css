@@ -87,7 +87,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 25px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   flex-wrap: wrap;
