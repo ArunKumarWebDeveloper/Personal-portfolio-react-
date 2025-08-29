@@ -1,3 +1,4 @@
+import  Loader  from './Components/Loader';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -19,7 +20,7 @@ function App() {
   return (
     
     <div className="main">
-      
+<Loader>
       <Navbar />
       <Home />
       <About />
@@ -28,7 +29,8 @@ function App() {
       <Resume />
       <Certificates />
       <Contact />
-    
+      </Loader>
+
     </div>
   );
 }
