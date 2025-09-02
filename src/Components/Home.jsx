@@ -19,7 +19,7 @@ function Home() {
 />
 
 <BlurText className="text-p"
-  text="Web Developer | Programmer"
+  text="Turning ideas into clean, modern code"
   delay={150}
   animateBy="words"
   direction="top"

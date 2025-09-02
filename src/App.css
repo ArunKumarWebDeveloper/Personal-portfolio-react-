@@ -74,22 +74,24 @@ a:hover {
 
 /* Navbar */
 /* Navbar Container */
- .custom-navbar {
-  margin: 10px auto; 
-  padding: 9px 18px;
-  position: sticky;
-  top: 20px;
-  z-index: 1000;
-  max-width: 1000px;
-  width: 90%; 
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+.nav1{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 10vh;
+}
+
+
+ #custom-navbar {
+  display: flex;
+  padding: 12px 18px;
+  width: 100%; 
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
   flex-wrap: wrap;
 }
 
@@ -112,13 +114,13 @@ a:hover {
 
 /* Base state */
 nav ul li a {
-  font-weight: 500;
+  font-weight: 600;
   color: hsl(210, 100%, 50%);
   transition: all 0.3s ease-in-out;
   padding: 5px 5px;        /* ✅ Always present */
-  border-radius: 15px;      /* ✅ Always present */
   text-decoration: none;
-  display: inline-block;    /* ✅ Prevents text shifting */
+  display: inline-block; 
+  border-radius: 10px;   /* ✅ Prevents text shifting */
 }
 
 /* Light mode hover */
@@ -126,8 +128,19 @@ nav ul li a:hover {
   background-color: hsl(210, 100%, 50%);
   color: #fff;
   text-decoration: none;
+  
 }
 
+nav ul {
+  transform: translate(15%);
+}
+
+nav h4{
+  font: 800;
+  font-size: 1.3rem;
+ color: #0070FF;
+  
+}
 
 
 .nav-links {
@@ -320,7 +333,7 @@ nav ul li a {
 
 /* General container for the home section */
 #home {
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 0;
   min-height: 100vh; /* Ensures it fills the screen */
   display: flex;

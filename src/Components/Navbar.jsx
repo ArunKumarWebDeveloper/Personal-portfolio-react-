@@ -8,13 +8,16 @@ function Navbar() {
   const [DarkMode, setDarkMode] = useDarkMode(); // ✅ Use the hook correctly
 
   return (
-    
-    <nav className="custom-navbar" aria-label="Main Navigation" >
+    <div className="nav1">
+    <nav id="custom-navbar" aria-label="Main Navigation" >
       <div className="logo-container">
         <a href="#">
           <img src= "/logo.png" alt="Arun Kumar R Logo" className="logo" />
         </a>
       </div>
+      <h4>
+        Arun Kumar R | Web Developer
+      </h4>
       
    <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`} id="navLinks" ref={navLinksRef}>
         <li><a href="#home">Home</a></li>
@@ -43,7 +46,7 @@ function Navbar() {
       </div>
       </div>
     </nav>
-
+</div>
   );
 }
 
