@@ -72,6 +72,11 @@ a:hover {
   height: 40px;
 }
 
+.logo:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
 /* Navbar */
 /* Navbar Container */
 .nav1{
@@ -114,7 +119,7 @@ a:hover {
 
 /* Base state */
 nav ul li a {
-  font-weight: 600;
+  font-weight: 500;
   color: hsl(210, 100%, 50%);
   transition: all 0.3s ease-in-out;
   padding: 5px 5px;        /* ✅ Always present */
@@ -136,7 +141,7 @@ nav ul {
 }
 
 nav h4{
-  font: 800;
+  font: 600;
   font-size: 1.3rem;
  color: #0070FF;
   
@@ -195,13 +200,19 @@ nav h4{
 
 @media (max-width: 768px) {
 
+  nav h4{
+    margin-left: 8px;
+    font-size: 15px;
+    width: 60%;
+  }
+
 
   .hamburger {
     display: flex;
   }
 
   .custom-navbar {
-    padding: auto 20px;
+    padding: auto ;
   }
 
   .hamburger-menu {
@@ -226,7 +237,7 @@ nav h4{
     width: 100%;
     background-color: #569432;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     padding: 10px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -252,6 +263,7 @@ nav h4{
   }
 
   .nav-links.open  {
+    
     color: auto ;
     display: flex;
     justify-content: center;
@@ -293,6 +305,7 @@ nav ul li a {
   }
 
   body.dark-mode .nav-links.open {
+    margin-top:40px;
     background-color: rgba(20, 20, 20, 0.8); 
     color: white;
     backdrop-filter: blur(12px);
@@ -369,7 +382,7 @@ nav ul li a {
 .text-type {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   color: white;
 }
 
@@ -380,6 +393,65 @@ nav ul li a {
   color: white;
 }
 
+
+.hire{
+
+  display: flex;
+  padding-left: 20px;
+  margin-top: 25px;
+
+  align-items: center;
+  height: 45px;
+  width: 160px;
+  gap: 50px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  border: none;
+   cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  font-size: 1rem;
+}
+
+.hire img{
+  padding: 10px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.hire:hover{
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out ;
+}
+
+.hire img:hover{
+  transform: translateX(10px);
+  transition: all 0.3s ease-in-out ;
+}
+
+.handle{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-1500%,-80%);
+}
+
+.handle img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+}
+
+.handle img:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s  ease-in-out;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -747,7 +819,7 @@ font-size:1.2rem;
 /* Responsive font sizes */
 @media (max-width: 768px) {
   #skills h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .skill {
@@ -755,8 +827,8 @@ font-size:1.2rem;
   }
 
   .skill img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   #skills h3 {
@@ -1089,6 +1161,17 @@ font-size:1.2rem;
 }
 
 
+@media (max-width: 768px){
+  .Contact a{
+    font-size: 0.98rem;
+  }
+
+  .contact-img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .footer {
   background-color: #151414;
   color: #ffffff;
@@ -1293,13 +1376,13 @@ body.dark-mode .btn:hover {
   width: 50px;
   height: 50px;
   border: 5px solid rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #007bff;
+  border-top: 5px solid #04b8ff;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 .load{
   padding:25px;
-  color:  #007bff;
+  color:  #0d9be2;
   font-size: 1.5rem;
 }
 

@@ -5,7 +5,7 @@ export default function Loader({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000); // fake delay
+    const timer = setTimeout(() => setLoading(false), 1000); // fake delay
     return () => clearTimeout(timer);
   }, []);
 
@@ -14,7 +14,7 @@ export default function Loader({ children }) {
       <div className="loader-container">
           
         <div className="spinner"> </div>
-        <p className="load">Loading... Please Wait </p>
+        <p className="load">Loading ... </p>
       </div>
     );
   }
