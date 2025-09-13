@@ -814,7 +814,7 @@ font-size:1.2rem;
 
 .skill:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .skill img {
@@ -1261,11 +1261,11 @@ body.dark-mode .site-link:hover {
   background-color: #181818;
 }
 
-body.dark-mode .skill-card {
-  background-color: #2a2a2a;
+body.dark-mode .skill {
+  background-color: #2c2c2c;
  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.5);
-  color: #f0f0f0;
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 } 
 
 /* RESUME */
@@ -1287,7 +1287,7 @@ body.dark-mode .resume-btn:hover{
 
 /* CERTIFICATES */
 body.dark-mode #certificates {
-  background-color: #1c1c1c;
+  background-color: #181818;
 }
 
 body.dark-mode .certificate-card {
@@ -1303,7 +1303,7 @@ body.dark-mode .view-button:hover{
 
 /* CONTACT */
  body.dark-mode #contact {
-  background-color: #191919;
+  background-color: #1b1b1b;
 }
 
 body.dark-mode .contact-info {
@@ -1319,7 +1319,7 @@ body.dark-mode .contact-info a {
 /* FOOTER */
  body.dark-mode .footer {
   background-color: #111;
-  color: #aaa;
+  color: #ffffff;
 } 
 
 /* BUTTONS */
