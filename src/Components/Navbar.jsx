@@ -1,8 +1,6 @@
 import useDarkMode from "../hooks/Darkmode"; 
 import useMobileMenu from './../hooks/useMobileMenu'; 
 
-
-
 function Navbar() {
    const { isMenuOpen, toggleMenu, hamburgerRef, navLinksRef } = useMobileMenu();
   const [DarkMode, setDarkMode] = useDarkMode(); // ✅ Use the hook correctly
@@ -16,7 +14,7 @@ function Navbar() {
         </a>
       </div>
       <h4>
-        Arun Kumar R | Web Developer
+        Arun | Web Developer
       </h4>
       
    <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`} id="navLinks" ref={navLinksRef}>
