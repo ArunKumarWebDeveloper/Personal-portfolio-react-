@@ -5,7 +5,7 @@ function Projects() {
     <p>Here are some of my projects that showcase my skills and creativity.</p>
     <div className="projects-container">
     <div className="project-card">
-      <h3>Weather + Planner </h3>
+      <h3>Weather + To-do-list </h3>
       <img src="/weather.png" alt="Project 1" class="project-image" loading="lazy" />
        <p>A simple website to check weather and plan daily task using to-do list.</p>
      <div class="project-buttons">

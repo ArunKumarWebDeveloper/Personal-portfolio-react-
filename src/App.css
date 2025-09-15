@@ -68,12 +68,12 @@ a:hover {
 .logo {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 .logo:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -441,15 +441,48 @@ nav ul li a {
   transform: translate(-1500%,-80%);
 }
 
-.handle img{
-  height: 35px;
+#git{
+   height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+}
+#linked{
+   height: 35px;
   width: 35px;
   border-radius: 50%;
   border: none;
 }
 
-.handle img:hover{
+#mail{
+  display: flex;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: relative;
+  top: 10%;
+  justify-content: center;
+  align-items: flex-end;
+ 
+}
+#mail img{
+  height: 26px;
+  width: 26px;
+}
+
+#git:hover{
   transform: scale(1.2);
+  transition: transform 0.3s  ease-in-out;
+}
+
+#linked:hover{
+   transform: scale(1.2);
+  transition: transform 0.3s  ease-in-out;
+}
+
+#mail:hover{
+   transform: scale(1.2);
   transition: transform 0.3s  ease-in-out;
 }
 
@@ -568,7 +601,7 @@ nav ul li a {
   font-family:Arial, Helvetica, sans-serif;
   margin-top: 40px;
   font-size: 1.1rem;
-  color:auto #333;   /* fixed */
+  color:auto #000000;   /* fixed */
   line-height: 1.7;
   word-spacing: normal;   /* makes words evenly spaced */
   text-align: justify;    /* optional: makes it look neat */
@@ -589,25 +622,24 @@ nav ul li a {
 .tool1 p{
   margin: auto;
   font-size: 1rem;
-  color: auto ;
 }
 
 /* Individual tool card */
 .tool-card {
-  
- padding: 15px 10px;
-  transition: transform 0.3s;
-  text-align: center;
 
+  padding: 10px;
 }
 .tool-card:hover {
   transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
 }
 .tool-card img {
   width: 40px;
   height: 40px;
-  margin-bottom: 10px;
+  
   border-radius: 8px;
+  background: transparent; /* ensure no background from CSS */
+  object-fit: contain;
 }
 
 
@@ -1322,6 +1354,9 @@ body.dark-mode .contact-info {
 body.dark-mode .contact-info a {
   color: #ffffff;
 } 
+body.dark-mode .contact-info a:hover{
+  color: #2b95ff;
+}
 
 /* FOOTER */
  body.dark-mode .footer {
